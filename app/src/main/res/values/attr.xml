@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SelectSeatView">
+        <attr name="seatNormalDrawable" format="reference"></attr>
+        <attr name="seatLockedDrawable" format="reference"></attr>
+        <attr name="seatCheckedDrawable" format="reference"></attr>
+        <attr name="seatSoldDrawable" format="reference"></attr>
+        <attr name="seatOrderDrawable" format="reference"></attr>
+        <attr name="topBackground" format="reference"></attr>
+        <attr name="cinemaTitle" format="string"></attr>
+        <attr name="cinemaTitleSize" format="dimension"/>
+        <attr name="cinemaTitleHeight" format="dimension"/>
+        <attr name="cinemaTitleColor" format="color"/>
+        <attr name="centerLineColor" format="color" />
+        <attr name="defaultLineColor" format="color"/>
+        <attr name="offsetLeft" format="dimension" />
+        <attr name="offsetTop" format="dimension" />
+        <attr name="offsetRight" format="dimension" />
+        <attr name="offsetBottom" format="dimension" />
+        <attr name="seatOffsetTop" format="dimension" />
+        <attr name="horizontalSpace" format="dimension"/>
+        <attr name="verticalSpace" format="dimension" />
+        <attr name="centerLineWidth" format="dimension"/>
+        <attr name="centerRegionWidth" format="dimension"/>
+        <attr name="maxBackTranslationX" format="fraction"/>
+        <attr name="maxBackTranslationY" format="fraction"/>
+        <attr name="initialTranslationX" format="fraction"/>
+        <attr name="initialTranslationY" format="fraction"/>
+        <attr name="seatWidth" format="dimension"/>
+        <attr name="seatHeight" format="dimension"/>
+        <attr name="minSeatWidth" format="dimension"/>
+        <attr name="minSeatHeight" format="dimension"/>
+        <attr name="maxSeatWidth" format="dimension"/>
+        <attr name="maxSeatHeight" format="dimension"/>
+        <attr name="thumWidth" format="dimension"></attr>
+        <attr name="thumHeight" format="dimension"/>
+        <attr name="thumBackgroundColor" format="color"/>
+        <attr name="thumTitleColor" format="color"/>
+        <attr name="thumCenterLineColor" format="color"/>
+        <attr name="thumLineWidth" format="dimension"/>
+        <attr name="thumLineColor" format="color"/>
+        <attr name="thumShowDelay" format="integer"/>
+        <attr name="thumOffsetLeft" format="dimension"/>
+        <attr name="thumOffsetTop" format="dimension"/>
+        <attr name="rowLabelLeft" format="dimension"/>
+        <attr name="rowLabelTop" format="dimension"/>
+        <attr name="rowLabelRight" format="dimension"/>
+        <attr name="rowLabelBottom" format="dimension"/>
+        <attr name="rowLabelTextColor" format="color"/>
+        <attr name="rowLabelTextSize" format="dimension"/>
+        <attr name="rowLabelWidth" format="dimension"/>
+        <attr name="rowLabelBackground" format="reference"/>
+        <attr name="thumTitleShow" format="boolean" />
+	</declare-styleable>
+	
+    <attr name="a_in" format="float" />
+    <attr name="a_out" format="float" />
+    <attr name="x_in" format="float" />
+    <attr name="x_out" format="float" />
+    <attr name="y_in" format="float" />
+    <attr name="y_out" format="float" />
+</resources>

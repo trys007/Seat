@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+   
+    <!-- 普通状态 -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#4bcf73" />
+
+            <corners android:radius="1dp" />
+        </shape>
+  	</item>
+
+</selector>

@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+    
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="10dp"
+		android:background="#e3e3e3"/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:layout_marginTop="5dp">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="left"
+			android:layout_marginLeft="10dp"
+			android:text="复仇者联盟2：奥创纪元"
+			android:textColor="#000000"
+			android:id="@+id/tx_movie_name"/>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_marginLeft="3dp"
+			android:layout_marginRight="3dp"
+			android:id="@+id/layout_play_type"
+			android:orientation="horizontal">
+
+		</LinearLayout>
+
+	</LinearLayout>
+	
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="10dp"
+		android:layout_marginTop="5dp">
+	    
+	    <TextView
+			android:text="今天(周一) "
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="12sp"
+			android:textColor="#888888"
+			android:id="@+id/tx_date"/>
+
+		<TextView
+			android:text=" 14:30英语"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="8dp"
+			android:textSize="12sp"
+			android:textColor="#888888"
+			android:id="@+id/tx_time_language"/>
+	    
+	</LinearLayout>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1px"
+		android:background="#eaeaea"
+		android:layout_marginTop="5dp"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"/>
+
+	<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="3dp"
+			android:layout_marginLeft="40dp"
+			android:layout_marginRight="40dp">
+	        
+        <LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:layout_gravity="center"
+			android:gravity="center">
+
+			<ImageView
+				android:src="@drawable/seat_normal"
+				android:layout_width="15dp"
+				android:layout_height="15dp"/>
+
+        	<TextView
+				android:text="可选"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="#5f5f5f"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:layout_gravity="center"
+			android:gravity="center">
+
+            <ImageView
+				android:src="@drawable/seat_checked"
+				android:layout_width="15dp"
+				android:layout_height="15dp"/>
+
+        	<TextView
+				android:text="已选"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="#5f5f5f"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:layout_gravity="center"
+			android:gravity="center">
+
+            <ImageView
+				android:src="@drawable/seat_lock"
+				android:layout_width="15dp"
+				android:layout_height="15dp"/>
+
+        	<TextView
+				android:text="已售"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="#5f5f5f"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:layout_gravity="center"
+			android:gravity="center">
+
+            <ImageView
+				android:src="@drawable/icon_seat_lovers"
+				android:layout_width="15dp"
+				android:layout_height="15dp"/>
+
+        	<TextView
+				android:text="情侣"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="#5f5f5f"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+		android:layout_width="match_parent"
+		android:layout_height="1px"
+		android:background="#eaeaea"
+		android:layout_marginTop="5dp"/>
+
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_weight="1"
+		android:background="#f0f0f0">
+
+		<com.seat.view.seat.MovieSeatView
+	        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+		    android:id="@+id/mSSView"
+			ptr:seatNormalDrawable ="@drawable/seat_normal"
+			ptr:seatLockedDrawable ="@drawable/seat_lock"
+			ptr:seatCheckedDrawable ="@drawable/seat_checked"
+			ptr:seatOrderDrawable ="@drawable/seat_lock"
+			ptr:seatSoldDrawable ="@drawable/seat_lock"
+			ptr:topBackground = "@drawable/cinema_top"
+			ptr:cinemaTitle="银幕中央"
+			ptr:cinemaTitleHeight="24dp"
+			ptr:cinemaTitleSize = "16sp"
+			ptr:cinemaTitleColor = "#ff737373"
+			ptr:centerLineColor ="#ff737373"
+			ptr:centerRegionWidth="12dp"
+			ptr:maxBackTranslationX="60%"
+			ptr:maxBackTranslationY="60%"
+			ptr:initialTranslationX="50%"
+			ptr:initialTranslationY="50%"
+			ptr:offsetTop="5dp"
+			ptr:offsetBottom="5dp"
+			ptr:offsetLeft="5dp"
+			ptr:offsetRight="5dp"
+			ptr:seatWidth ="20dp"
+			ptr:seatHeight="20dp"
+			ptr:seatOffsetTop="5dp"
+			ptr:minSeatWidth ="20dp"
+			ptr:minSeatHeight="20dp"
+			ptr:maxSeatWidth ="40dp"
+			ptr:maxSeatHeight="40dp"
+			ptr:horizontalSpace="2dp"
+			ptr:verticalSpace="2dp"
+			ptr:thumWidth="150dp"
+			ptr:thumHeight="150dp"
+			ptr:thumLineWidth="1dp"
+			ptr:thumShowDelay="10000"
+			ptr:thumTitleColor="@android:color/white"
+			ptr:thumLineColor="#fff4b800"
+			ptr:thumBackgroundColor="#70000000"
+			ptr:rowLabelLeft="2dp"
+			ptr:rowLabelTop="2dp"
+			ptr:rowLabelBottom="2dp"
+			ptr:rowLabelTextColor="@android:color/white"
+			ptr:rowLabelTextSize="14sp"
+			ptr:rowLabelWidth="16dp"
+			ptr:rowLabelBackground="@drawable/scaleplate"
+			ptr:thumTitleShow="true"
+		    android:layout_marginTop="20dp"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:layout_marginBottom="0dp" />
+
+    	<TextView
+			android:text="4号厅银幕"
+			android:layout_width="wrap_content"
+			android:layout_height="20dp"
+			android:textColor="#fdcb32"
+			android:id="@+id/tx_screen_name"
+			android:gravity="center"
+			android:layout_gravity="center_horizontal"
+			android:background="@drawable/icon_seat_screen"
+			android:layout_marginLeft="100dp"
+			android:layout_marginRight="100dp"/>
+
+	</FrameLayout>
+
+	<RelativeLayout 
+	    android:layout_width="match_parent" 
+	    android:layout_height="115dp"  
+	    android:id="@+id/selected_seats" 
+	    android:visibility="invisible" >
+
+	    <include  layout="@layout/layout_choose_seat" />
+
+	</RelativeLayout>
+
+</LinearLayout>

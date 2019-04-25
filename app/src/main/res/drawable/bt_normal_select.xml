@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 按下状态 -->
+    <item android:state_pressed="true"><shape android:shape="rectangle">
+            <solid android:color="@color/btn_red_color" />
+
+            <corners android:radius="100dp" />
+        </shape></item>
+    <item android:state_enabled="false"><shape android:shape="rectangle">
+            <solid android:color="#D0D0D0" />
+
+            <corners android:radius="100dp" />
+        </shape></item>
+    <!-- 普通状态 -->
+    <item><shape android:shape="rectangle">
+            <solid android:color="@color/theme_red_color" />
+
+            <corners android:radius="100dp" />
+        </shape></item>
+
+</selector>

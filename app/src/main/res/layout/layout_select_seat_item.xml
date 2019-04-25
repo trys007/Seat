@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bt_close"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="3dp"
+    android:layout_marginRight="3dp"
+    android:clickable="true" >
+
+    <TextView
+        android:id="@+id/seatno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bg_select_seat"
+        android:padding="8dp"
+        android:gravity="center"
+        android:text="12排121号"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/select_seat_txt_size" />
+
+    <ImageButton
+        android:layout_width="@dimen/select_seat_img_width"
+        android:layout_height="@dimen/select_seat_img_width"
+        android:layout_marginLeft="-10dp"
+        android:layout_toRightOf="@+id/seatno"
+        android:background="#00000000"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_seat_close" />
+
+</RelativeLayout>
